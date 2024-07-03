@@ -1,0 +1,175 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color:rgb(35,35,35);
+}
+body{
+    padding:0;
+    margin:0;
+}
+.first{
+    border: 2px solid #111111;
+    width: 281px;;
+    height:147px;
+    font-size:30px;
+    border-radius:0 20px 20px 0;
+    background-color:#111111;
+}
+.second{
+    border: 2px solid #111111;
+    width:281px;
+    height:536px;
+    border-radius:0 20px 20px 0;
+    margin-top:15px;
+    background-color:#111111;
+}
+.right-section{
+    border: 2px solid #111111;
+    width:1230px;
+    height:703px;
+    position: absolute;
+    left:19.5%;
+    top:0;
+    overflow: auto;
+    border-radius:20px 0 0 20px;
+    background-color:#111111;
+
+}
+
+.third-section{
+    display:flex;
+    justify-content: space-between;
+}
+#c1{
+    display: flex;
+    justify-content: space-between;
+}
+#b{
+    text-align: end;
+    margin-top:-65px;
+    margin-right:20px;
+    font-size:47px;
+    color: #232323;
+}
+#c{
+    margin-left:40px;
+    font-size: 29px;
+    color:#e0e0e0;
+}
+figure{
+    font-family: 'Poppins', sans-serif!important;
+}
+#icon-search,#icon-home{
+    color:#696969;
+    text-decoration:none;
+}
+#icon-home{
+    font-size: 30px;
+}
+
+.home-container{
+    display: flex;
+    justify-content:start;
+    margin-top:25px;
+    margin-left:10px;
+    color: #696969;
+}
+#icon-search{
+    padding-right:10px;
+    font-size:25px;
+    cursor: pointer;
+}
+.search-container{
+    border:solid #232323 2px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;;
+    background-color:#232323;
+    margin:0 8px;
+    margin-top:-14px;
+}
+#s{
+    padding-right:-90px;
+    outline: none;
+    border:#232323;
+    width:90%;
+    color:#e0e0e0;
+    border-radius:25px;
+    background-color:#232323;
+    font-size: 1.2rem;
+}
+.music{
+    border: solid 2px;
+    width:98.4%;
+    position:fixed;
+    bottom:0;
+    height:80px;
+    background-color:#696969;
+    border-radius: 12px;   
+    display: flex;
+    justify-content: center;
+
+
+}
+#btn1{
+    font-size: 30px;
+ 
+}
+.disc1-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.disc1-container{
+    position: fixed;
+    top:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition:0.8s
+
+}
+.bg-active{
+    visibility: visible;
+    opacity: 1;
+}
+.disc1-player{
+    border:none 2px solid;
+    width:60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius:10px;
+}
+.anime{
+    animation-name:Play;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes Play{
+    from
+    {
+        transform:rotate(0deg);   
+    }
+    to
+    {
+        transform:rotate(360deg);
+    }
+}
+.disc1-player>img{
+    width:300px;
+}
+img{
+    transition:0.5s;
+}
+img:hover{
+    transform: scale(1.06);
+}
